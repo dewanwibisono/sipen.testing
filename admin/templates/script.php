@@ -40,3 +40,6 @@
 <script src="<?= base_url('assets/libs/flatpickr/flatpickr.min.js'); ?>"></script>
 <script src="<?= base_url('assets/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js'); ?>"></script>
 <script src="<?= base_url('assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js'); ?>"></script>
+
+<script src="<?= base_url('assets/node_modules/sweetalert2/dist/sweetalert2.all.min.js'); ?>"></script>
+<script src="<?= base_url('assets/node_modules/sweetalert2/dist/sweetalert2.min.js'); ?>"></script>
