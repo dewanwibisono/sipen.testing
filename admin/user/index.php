@@ -1,8 +1,9 @@
 <?php
 require '../../config/koneksi.php';
 require '../../config/config.php';
-
-session_start();
+// session_start();
+?>
+<?php
 
 function gentoken()
 {
@@ -56,9 +57,9 @@ $tokennya = bikintoken();
                         include "tampil-data.php";
                     } elseif ($_GET['page'] == 'tambah') {
                         include "tambah.php";
-                    } //elseif ($_GET['page'] == 'ubah') {
-                    //include "form-ubah.php";
-                    //}
+                    } elseif ($_GET['page'] == 'edit') {
+                        include "edit.php";
+                    }
                     ?>
                 </div> <!-- container-fluid -->
 
@@ -118,6 +119,28 @@ $tokennya = bikintoken();
                     <?php echo bikintag(); ?>
                 </form>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Popup untuk Edit Data -->
+<div id="modal_edit" method="POST" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Data</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="post" id="modal_edit">
+                <div class="modal-body">
+                    <div id="modal-edit">
+                    </div>
+                </div>
+                <div class=" modal-footer">
+                    <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-success" name="submit">Simpan</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

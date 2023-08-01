@@ -54,7 +54,7 @@
                                 <td>
                                     <div class="dropdown">
                                         <a href="detail?id=<?= $row['id_user'] ?>" class="icon-item col-xl-3 col-lg-4 col-sm-6"><i data-feather="eye"></i><span>Details</span>
-                                            <a href="edit?id=<?= $row['id_user'] ?>" class="icon-item col-xl-3 col-lg-4 col-sm-6"><i data-feather="edit"></i><span>Edit</span>
+                                            <a href="#" id="modal_edit" data-id="<?= $data['id_user']; ?>" class="icon-item col-xl-3 col-lg-4 col-sm-6"><i data-feather="edit"></i><span>Edit</span>
                                                 <a href="hapus?id=<?= $row['id_user'] ?>&csrf_token=<?= $tokennya ?>" class="icon-item col-xl-3 col-lg-4 col-sm-6"><i data-feather="trash"></i><span>Hapus</span>
                                     </div>
                                 </td>
